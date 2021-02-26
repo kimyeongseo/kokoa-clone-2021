@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>friends - KaKao clone</title>
+    <title>Chats - KaKao clone</title>
   </head>
 
   <body>
@@ -33,57 +33,32 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Chats</h1>
       <div class="screen-header__icon">
         <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="far fa-comment-dots fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
         <span><i class="fas fa-cog fa-lg"></i></span>
       </div>
     </header>
 
-    <a id="friends-display-link">
-      <i class="fas fa-info-circle"></i> Friends' Names Display
-      <i class="fas fa-chevron-right fa-xs"></i>
-    </a>
-
-    <main class="friends-screen">
+    <main class="main-screen">
       <div class="user-component">
         <div class="user-component__column">
           <img
             src="screenshots/증명사진.jpg"
-            class="user-component__프사 user-component__프사--xl"
+            class="user-component__프사 user-component__프사"
           />
           <div class="user-component__text">
             <h4 class="user-component__이름">yeongseo</h4>
-            <!--<h6 class="user-component__subtitle">this text whatever</h6>-->
+            <h6 class="user-component__subtitle">
+              영서야 성실하고 꾸준하게만 하자
+            </h6>
           </div>
         </div>
-        <div class="user-component__column"></div>
-      </div>
-
-      <div class="friends-screen__channel">
-        <div class="friend-screen__channel-header">
-          <span>Channel</span>
-          <i class="fas fa-chevron-up fa-xs"></i>
-        </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="screenshots/증명사진.jpg"
-              class="user-component__프사 user-component__프사--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__이름 user-component__이름--not-bold">
-                Channel
-              </h4>
-            </div>
-          </div>
-          <div class="user-component__column">
-            <div>
-              <span>2</span>
-              <i class="fas fa-chevron-right fa-xs"></i>
-            </div>
-          </div>
+        <div class="user-component__column">
+          <span class="user-component__time">21:22</span>
+          <div class="badge">1</div>
         </div>
       </div>
     </main>
@@ -92,14 +67,14 @@
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html"
-            ><i class="fas fa-user fa-2x"></i
+            ><i class="far fa-user fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
             <span class="nav__notice badge">1</span>
             <!-- span은 inline이라서 넓이와 높이가 적용되지 않는다. 따라서 span을 block로 바꿔줘야 한다.-->
-            <i class="far fa-comment fa-2x"></i
+            <i class="fas fa-comment fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">

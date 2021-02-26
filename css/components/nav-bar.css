@@ -1,0 +1,41 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+/*box-sizing: border-box; --> 내가 padding을 줘도 신경쓰지마. 내 box 사이즈를 늘리지 말아줘
+                          --> box 사이즈가 작아져도 상관없다고 말하는 방법 */
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  position: relative;
+  color: #2e363e;
+}
+
+.nav__notice {
+  position: absolute;
+  /*  position: absolute;는 가장 가까운 relative를 가진 부모 기준으로 움직인다.*/
+  left: 20px;
+  bottom: 15px;
+}
+
+.nav__notice2 {
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  position: absolute;
+  left: 30px;
+  bottom: 25px;
+}

@@ -1,0 +1,53 @@
+.user-component {
+  justify-content: space-between;
+}
+
+.user-component,
+.user-component__column:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.user-component__프사 {
+  width: 70px;
+  height: 70px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+.user-component_이름 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.user-component__subtitle {
+  margin-top: 8px;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.user-component__프사--xl {
+  width: 80px;
+  height: 80px;
+}
+
+.user-component__프사--sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
+
+.user-component__이름--not-bold {
+  font-weight: 400;
+}
+
+.user-component__column:last-child {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.user-component__time {
+  margin-bottom: 7px;
+  display: block;
+  font-size: 13px;
+  margin-right: 10px;
+}
