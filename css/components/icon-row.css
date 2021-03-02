@@ -1,0 +1,44 @@
+.icon-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-row__icon {
+  display: flex;
+  flex-direction: column;
+  /*row는 옆에 오는 거고, column은 다음 줄에 오는 것! 
+    flex-directio에 따라 cross axis랑 main axis가 바뀜
+    (now main axis는 세로축이고 cross axis는 가로축)
+    그래서 cross axis를 바꾸기 위해 align-items:center; 을 추가한다*/
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 5px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.icon-row__icon span {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.icon-row__icon-id {
+  position: relative;
+}
+
+.icon-row__icon-id-text {
+  position: absolute;
+  font-size: 20px;
+  right: 11px;
+}
+
+.icon-row__icon-emotion {
+  position: relative;
+}
+
+.icon-row__icon-emotion_text {
+  position: absolute;
+  display: flex;
+  font-size: 20px;
+  right: 11px;
+}

@@ -18,7 +18,7 @@
 
 .friends-screen__channel {
   margin-top: 25px;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: var(--main-border);
   padding-top: 10px;
 }
 
@@ -26,10 +26,35 @@
   margin-bottom: 25px;
   display: flex;
   justify-content: space-between;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--gray-color);
 }
 
 .friend-screen__channel-header span {
   font-size: 13px;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--gray-color);
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden; /*마우스에 걸리지 않게 빠져버리는 것*/
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh; /*화면 높이의 100%*/
+  width: 100vw; /*화면 넓이의 100%*/
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 105px;
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  /* 애니메이션에 forwards를 추가하면 마지막 속성인 opacity:0이 애니메이션이 끝나고도 유지된다*/
+  animation-delay: 2s;
 }

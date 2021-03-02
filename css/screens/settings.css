@@ -1,0 +1,48 @@
+.setttings-screen__column1 {
+  display: block;
+  border-bottom: var(--main-border);
+  padding-bottom: 25px;
+}
+
+.setttings-screen__column-title {
+  margin: 20px 0px;
+  opacity: 0.8;
+}
+
+.setttings-screen__column-title i {
+  margin: 0px 15px;
+  color: var(--gray-color);
+}
+
+.settings-screen__column-box {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.setttings-screen__column-subtitle {
+  position: relative;
+}
+
+.settings-screen__column-subtitle-second {
+  position: absolute;
+  opacity: 0.4;
+  right: 10px;
+}
+
+.settings-screen__column-box-dot {
+  position: absolute;
+  left: 100px;
+}
+
+.setttings-screen__column2 {
+  padding-top: 25px;
+}
+
+.chat-header__bar-icon i {
+  padding: 0px 10px;
+}
+
+.chat-header__title {
+  display: flex;
+  padding-left: 50px;
+}

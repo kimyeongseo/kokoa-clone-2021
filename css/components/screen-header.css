@@ -14,3 +14,33 @@
 .screen-header__icon span {
   margin-left: 25px;
 }
+
+.fa-cog {
+  position: relative;
+}
+
+.screen-header__dot {
+  position: absolute;
+  background-color: tomato;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  right: 5px;
+  top: 40px;
+}
+
+@keyframes cogspinanimation {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icon .fa-cog:hover {
+  animation: cogspinanimation 2s linear infinite;
+}
